@@ -1,0 +1,15 @@
+color,type,doors,tires,class
+red,suv,2,whitewall,A
+blue,minivan,4,whitewall,B
+green,car,4,whitewall,B
+red,minivan,4,blackwall,B
+green,car,2,blackwall,A
+green,suv,4,blackwall,B
+blue,suv,2,blackwall,B
+blue,car,2,whitewall,A
+red,suv,2,blackwall,B
+blue,car,4,blackwall,B
+green,suv,4,whitewall,A
+red,car,2,blackwall,A
+green,suv,2,blackwall,B
+green,minivan,4,whitewall,B
