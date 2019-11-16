@@ -69,7 +69,7 @@ greenentropy = pgreen*(-greena*m.log2(greena)-greenb*m.log2(greenb))
 blueentropy = pblue*(-bluea*m.log2(bluea)-blueb*m.log2(blueb))
 
 #find the IG
-colorig = redentropy+greenentropy+blueentropy
+colorig = entropy-(redentropy+greenentropy+blueentropy)
 print("Color Information gain is",colorig)
 
 #####################################################
@@ -112,7 +112,7 @@ minivanentropy = pminivan*(-minivana-minivanb*m.log2(minivanb))
 carentropy = pcar*(-cara*m.log2(cara)-carb*m.log2(carb))
 
 #find the IG
-typesig = suventropy+minivanentropy+carentropy
+typesig = entropy-(suventropy+minivanentropy+carentropy)
 print("Type Information gain is",typesig )
 
 #####################################################
@@ -153,7 +153,7 @@ doors2entropy = pdoors2*(-doors2a-doors2b*m.log2(doors2b))
 
 
 #find the IG
-doorsig = doors1entropy+doors2entropy
+doorsig = entropy-(doors1entropy+doors2entropy)
 print("Doors Information gain is",doorsig )
 
 
@@ -195,7 +195,7 @@ blackwallentropy = pblackwall*(-blackwalla*m.log2(blackwalla)-blackwallb*m.log2(
 
 
 #find the IG
-tiresig = doors1entropy+doors2entropy
+tiresig = entropy-(doors1entropy+doors2entropy)
 print("Tires Information gain is",tiresig )
 
 if(colorig> typesig and doorsig and tiresig):
@@ -209,4 +209,9 @@ if(tiresig> colorig and typesig and doorsig):
 
 
     
+
+
+
+
+
 
